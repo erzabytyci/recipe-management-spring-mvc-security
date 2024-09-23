@@ -39,8 +39,8 @@ Features:
   
 #How to Run
 Clone the repository:
-git clone https://github.com/.git
-cd repo-name
+git clone https://github.com/erzabytyci/recipe-management-spring-mvc-security.git
+cd recipe-management-spring-mvc-security
 
 Run the application:
 Open the project in an IDE like IntelliJ.
