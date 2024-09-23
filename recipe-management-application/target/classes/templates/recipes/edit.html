@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Edit Recipe</title>
+  <link rel="stylesheet" th:href="@{/css/styless.css}">
+</head>
+<body>
+
+
+<h1 class="title5">Edit Recipe</h1>
+
+<form th:action="@{|/recipes/${recipe.id}/edit|}" method="post">
+
+
+  <div class="form-group">
+  <label for="name">Recipe Name:</label>
+  <input type="text" id="name" name="name" th:value="${recipe.name}"autocomplete="off"  required />
+  </div>
+
+  <div class="form-group">
+  <label for="category">Category:</label>
+  <input type="text" id="category" name="category" th:value="${recipe.category}" autocomplete="off"  required />
+  </div>
+
+  <div class="form-group">
+  <label for="ingredients">Ingredients:</label>
+  <textarea id="ingredients" name="ingredients"  th:text="${recipe.ingredients}" autocomplete="off"  ></textarea>
+  </div>
+
+  <div class="form-group">
+  <label for="instructions">Instructions:</label>
+  <textarea id="instructions" name="instructions" th:text="${recipe.instructions}" autocomplete="off" required ></textarea>
+  </div>
+
+   <div class="form-group">
+  <label for="preparationTime">Preparation Time (minutes):</label>
+  <input type="number" id="preparationTime" name="preparationTime" th:value="${recipe.preparationTime}" autocomplete="off" required />
+   </div>
+
+  <div class="button2">
+  <button type="submit">Save</button>
+  </div>
+
+  <a th:href="@{/recipes/view-all}">Cancel</a>
+</form>
+
+</body>
+</html>

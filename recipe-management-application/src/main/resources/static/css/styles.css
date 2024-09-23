@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffb6c1;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title styling */
+.title3 {
+    color: #F8E2B1;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 60px;
+    font-family: cursive;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Back to Recipe List link */
+a {
+    color: #ff3385;  /* Bright pink for the link */
+        text-decoration: none;
+        font-size: 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Search form styling */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;  /* Remove border */
+    border-radius: 25px;  /* Fully rounded input fields */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow for input fields */
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #ff66b3;  /* Bright pink background */
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 180px;  /* Shorter button */
+        border-radius: 30px;  /* Fully rounded button */
+        cursor: pointer;
+        font-size: 20px;  /* Bigger font for button */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Soft shadow for the button */
+        margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+/* Recipe list styling */
+/* Recipe list styling */
+ul {
+    display: flex; /* Use flexbox */
+      flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+      justify-content: flex-start; /* Center the items in the row */
+      gap: 20px; /* Adds space between the list items */
+      padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color:#FFFDD0;
+    border: 2px solid pink;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+strong {
+    color: #555;
+}
+
+/* Alert and no-recipes message */
+#no-recipes-message {
+    font-size: 20px;
+    color: red;
+    position:absolute;
+    text-align: left;
+    padding-left: 370px;
+    margin-top: -45px;
+}
+
+/* Edit and Delete buttons */
+form button[type="submit"], a button {
+    margin-top: 10px;
+}

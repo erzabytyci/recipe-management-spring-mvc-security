@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Add Recipe</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <script>
+  function showAlert() {
+    alert ("Recipe added successfully! You can view the recipe in 'View All Recipes.'");
+  }
+  </script>
+</head>
+<body>
+
+
+<h1 class="title5">Add New Recipe</h1>
+
+<form th:action="@{/recipes}" th:object="${recipe}" method="post">
+
+  <input type="text" id="name" th:field="*{name}" placeholder="Recipe name" autocomplete="off"  required/><br/>
+
+  <input type="text" id="category" th:field="*{category}" placeholder="Category ex. Pasta, Dessert..." autocomplete="off"  required/><br/>
+
+  <textarea id="ingredients" th:field="*{ingredients}" placeholder="Ingredients" autocomplete="off"  required></textarea><br/>
+
+  <textarea id="instructions" th:field="*{instructions}" placeholder="Instructions" autocomplete="off"  required></textarea><br/>
+
+  <input type="number" id="preparationTime" name="preparationTime" placeholder="Preparation Time (minutes):" autocomplete="off"  required /><br/>
+
+  <button id="button2" onclick="showAlert()">Save Recipe</button>
+
+  <a href="/recipes">Cancel</a>
+
+</form>
+</body>
+</html>
