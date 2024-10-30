@@ -1,0 +1,12 @@
+com\example\recipe_management_application\controller\AuthController.class
+com\example\recipe_management_application\RecipeManagementApplication.class
+com\example\recipe_management_application\controller\ProfileController.class
+com\example\recipe_management_application\service\CustomUserDetailsService.class
+com\example\recipe_management_application\model\User.class
+com\example\recipe_management_application\service\UserService.class
+com\example\recipe_management_application\config\SecurityConfig.class
+com\example\recipe_management_application\controller\RecipeController.class
+com\example\recipe_management_application\repository\RecipeRepository.class
+com\example\recipe_management_application\repository\UserRepository.class
+com\example\recipe_management_application\service\RecipeService.class
+com\example\recipe_management_application\model\Recipe.class
